@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #screenNokia {
+            width: 500px;
+            height: 150px;
+        }
+        #screenIphone{
+            width: 500px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+<div id = 'nokia'>
+    <h1>Nokia</h1>
+    <textarea name="" id="screenNokia" cols="30" rows="10" placeholder="screen" readonly></textarea>
+    <div>
+        <button id="powerNokia" onclick="setOnOff(Nokia)">on</input>
+        <button onclick="getCheckStatus(Nokia)">Status moblie</button>
+        <button onclick="setTypingMessager(Nokia)">texting</button>
+        <button onclick="setSendMessager(Nokia)">Send</button>
+        <button onclick="getBack(Nokia)">Back</button>
+        <button onclick="getInbox(Nokia)">Inbox</button>
+        <button onclick="getOutBox(Nokia)">Outbox</button>
+    </div>
+</div>
+
+<hr>
+
+<div id="iphone">
+    <h1>Iphone</h1>
+    <textarea name="" id="screenIphone" cols="30" rows="10" placeholder="screen" readonly></textarea>
+    <div>
+        <button id="powerIphone" onclick="setOnOff(Iphone)">on</button>
+        <button onclick="getCheckStatus(Iphone)">Status moblie</button>
+        <button onclick="setTypingMessager(Iphone)">texting</button>
+        <button onclick="setSendMessager(Iphone)">Send</button>
+        <button onclick="getBack(Iphone)">Back</button>
+        <button onclick="getInbox(Iphone)">Inbox</button>
+        <button onclick="getOutBox(Iphone)">outBox</button>
+    </div>
+</div>
+<script src="moblie.js"></script>
+</body>
+</html>
